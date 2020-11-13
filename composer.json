@@ -1,0 +1,59 @@
+{
+    "name": "fof/sitemap",
+    "description": "Generate a sitemap",
+    "keywords": [
+        "extension",
+        "flarum",
+        "flagrow",
+        "sitemap"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "email": "clark.winkelmann@gmail.com",
+            "homepage": "https://clarkwinkelmann.com/"
+        },
+        {
+            "name": "Daniël Klabbers",
+            "email": "daniel@klabbers.email",
+            "homepage": "http://luceos.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/FriendsOfFlarum/sitemap/issues",
+        "source": "https://github.com/FriendsOfFlarum/sitemap"
+    },
+    "require": {
+        "flarum/core": ">=0.1.0-beta.14 <0.1.0-beta.15",
+        "fof/console": "^0.6.0",
+        "fof/components": "^0.2.0",
+        "ext-zlib": "*"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "FoF Sitemap",
+            "icon": {
+                "name": "fas fa-sitemap",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/14941"
+        }
+    },
+    "replace": {
+        "flagrow/sitemap": "*"
+    },
+    "suggest": {
+        "fof/pages": "List pages in the sitemap",
+        "flarum/tags": "List tags in the sitemap"
+    },
+    "autoload": {
+        "psr-4": {
+            "FoF\\Sitemap\\": "src/"
+        }
+    }
+}
